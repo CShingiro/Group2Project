@@ -177,3 +177,21 @@ footer { background-color:#184e74;
     margin-bottom:20px;
     border: 2px solid #184e74;}
 
+.calendar {
+    height: 600px;
+    width: 800px;
+    border: 10px black thick;
+    margin: 50px 500px;
+}
+
+thead {
+    border: 3px black thick;
+}
+
+td {
+    border: 10px black thick;
+}
+
+#schedule {
+    float: right;
+}

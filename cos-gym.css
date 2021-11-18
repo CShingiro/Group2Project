@@ -253,10 +253,12 @@ footer { background-color:#184e74;
     margin:10px;}
     
 .hding {
-    width:350px;
-    height:25px;padding:25px;
+    width:400px;
+    height:55px;
+    padding-top:15px;
     color:white;
     text-align:center;
+    margin-left: 5%;
     background-color: #184e74;
     box-shadow: 1px 1px 3px black;}
 

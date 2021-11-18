@@ -225,7 +225,7 @@ footer { background-color:#184e74;
     right: 0;
     bottom: 0;
     width: 800px;
-    height: 450px;
+    height: 500px;
     background: #fff;
     margin: 1em auto;
     border: 4px solid #e2e2e2;
@@ -251,20 +251,20 @@ footer { background-color:#184e74;
   }
   .head_cal {
     background: #fff;
-    color: #85baff;
+    color: #79181e;
     font-size: 2rem;
     line-height: 5rem;
     text-transform: uppercase;
   }
   .subhead_cal {
-    background: #85baff;
+    background: #184e74;
     color: #fff;
     font-size: 1.2rem;
     line-height: 2rem;
   }
   .week_cal {
     background: #fff;
-    color: #d7d7d7;
+    color: #184e74;
     font-size: 1rem;
     line-height: 2rem;
   }
@@ -275,7 +275,7 @@ footer { background-color:#184e74;
     padding: 0;
     text-decoration: none;
     background: #fff;
-    color: #888;
+    color: black;
     height: 3.2rem;
     width: 100%;
     line-height: 3.2rem;
@@ -289,6 +289,12 @@ footer { background-color:#184e74;
     width: 14.28571428571429%;
     height: auto;
   }
+
+  tbody.days_cal td a:hover {
+    background: #184e74;
+    color: #fff;
+  }
+
   .event {
     color: #85baff !important;
     transition: all 0.3s ease;

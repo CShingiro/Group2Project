@@ -495,5 +495,54 @@ footer { background-color:#184e74;
       }
 
 /* Online */
+
+#online_info {
+    text-align: center;
+    width: 40%;
+    height: 200px;
+    padding-left: 5%;
+}
+
+#workout_video_1 {
+    position: relative;
+    margin: 0 0 0 0;
+    padding-left: 10%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+#workout_video_2 {
+    position: relative;
+    margin: -12% 0 0 0;
+    padding-right: 10%;
+    float: right;
+}
+
+#online_signup {
+    position: relative;
+    margin: 10% -30% 0 0;
+    text-align: center;
+    width: 20%;
+    height: 10%;
+    float: right;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+
+.online_message {
+    font-size: 1.5em;
+}
+
+#online_signup_button {
+    position: relative;
+    margin: 0 160% 0 -25%;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 40%;
+    height: 10%;
+
+}
     
    

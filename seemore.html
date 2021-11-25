@@ -28,7 +28,22 @@
             </div> 
         </header>
         <main>
-
+            <h2>Order Summary</h2>
+            <div id="product_description_checkout"></div>
+            <h2>Payment Information</h2>
+            <form action="checkout.php" method="POST">
+                <input type="text" placeholder="First Name" name="first_name" id="first_name" class="textBoxReg" required>
+                <input type="text" placeholder="Last Name" name="last_name" id="last_name" class="textBoxReg" required>
+                <input type="tel" placeholder="Phone: (000)-000-0000" pattern="^\d{3}-\d{3}-\d{4}$" name="phone" id="phone" class="textBoxReg" required>
+                <input type="text" placeholder="Name On Card" name="name_on_card" id="name_on_card" class="textBoxReg" required>
+                <input type="number" placeholder="Card Number" pattern="^\d{12}" name="card_number" id="card_number" class="textBoxReg" required>
+                <input type="number" placeholder="Expiry Date" pattern="^\d{4}" name="expiry" id="expiry" class="textBoxReg" required>
+                <input type="number" placeholder="CVC" pattern="^\d{3}" name="cvc" id="cvc" class="textBoxReg" required>
+                <input type="text" placeholder="Province" name="province" id="province" class="textBoxReg" required>
+                <input type="text" placeholder="City" name="city" id="city" class="textBoxReg" required>
+                <input type="text" placeholder="Address" name="address" id="address" class="textBoxReg" required>
+                <input type="text" placeholder="Postal Code" name="postal_code" id="postal_code" class="textBoxReg" required>
+            </form>
         </main>
         <footer>
             <div>

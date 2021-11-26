@@ -1,7 +1,7 @@
 "use strict"
 
 (() => {
-    $("figure").click(function(){
-        
+    $("a").click(function(){
+        $(".shop_image").appendTo('#product');
     })
 });

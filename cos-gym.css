@@ -550,5 +550,13 @@ footer { background-color:#184e74;
   height: 85%;
   
 }
-    
+
+#form {
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+.payment_title {
+  text-align: center;
+}
    

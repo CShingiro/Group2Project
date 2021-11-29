@@ -9,9 +9,9 @@
 //on next page
 
 (() => {
-    if (!localStorage.getItem("useImage")) return;
+    if (!localStorage.getItem("image")) return;
     let img = $('<img />', {
-        src: localStorage.getItem("useImage"),
+        src: localStorage.getItem("image"),
     });
     img.appendTo($('#product'));
 });

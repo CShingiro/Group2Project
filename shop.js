@@ -1,7 +1,17 @@
-"use strict"
+"use strict";
 
 (() => {
     $("a").click(function(){
-        $(".shop_image").appendTo('#product');
-    })
+        localStorage.setItem("image", this.prev().attr('src'));
+    });
+});
+
+//on next page
+
+(() => {
+    if (!localStorage.getItem("useImage")) return;
+    let img = $('<img />', {
+        src: localStorage.getItem("useImage"),
+    });
+    img.appendTo($('#product'));
 });

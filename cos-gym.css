@@ -179,6 +179,32 @@ footer { background-color:#184e74;
     border: 2px solid #184e74;}
 
 
+/*Result-Contact*/
+
+.imgresult img{    
+    width:100%;
+    height:750px;
+    background: url("images/result.jpg");
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;}
+    
+.imgresult {position: relative;}
+    
+.title-result {
+    position: absolute; 
+    background-color: #3c3b3bd0;
+    color:#f8e3bc; 
+    box-shadow: 2px 2px 5px black;
+    padding: 70px; font-size: 375%;
+    left: 12%; top: 23%;} 
+    
+.title-result p{  
+    font-size: 50%;}
+
+.footer-res {margin-top:-5px;}
+    
+
 /*About*/
 
 .firstImg {
@@ -559,4 +585,38 @@ footer { background-color:#184e74;
 .payment_title {
   text-align: center;
 }
-   
+
+
+@media screen and (max-width:1024px){
+
+.logo img {width: 50%; margin-top: 8%; margin-bottom: 5%;}
+footer {width:100%; justify-content: flex-end; 
+       flex-direction: column;}
+.title-home {font-size: 450%; left:1%; top:5%;
+        padding: 45px; padding-right: 40px;} 
+.imghome img {width:100%; height:550px;
+        background: url("images/home.jpg");}
+.f1, .f2 {font-size: 150%; margin-bottom: 5%;
+    margin-top: 10%; margin-left: 30%;}
+.f3 {font-size: 150%; margin-bottom: 10%;
+        margin-top: 10%; margin-left: 32%;}
+.three-images {grid-template-columns: 1fr; grid-gap: 0%;
+         width: 93%;}  
+.shop-images {grid-template-columns: 1fr 1fr; }
+.title-shop {width: 80%; margin-left: 10%;}
+.btn-3 {width: 33%; padding: 10px; margin-left: 55%;
+        margin-top: 10%; margin-bottom: 8%;}
+.contact-grid {grid-template-columns: 1fr;}
+.location {width: 90%; margin-left:5%;}
+.sub-columns {grid-template-columns: 1fr 1fr ; 
+         margin-left:5%; margin-bottom:5%;}
+.title-contact {width: 50%; margin-left: 80px;
+        margin-top: 10%;}
+.form-contact textarea {width:63%;height:10vh;}
+.form-contact input {padding-right:55px;}
+.submit {padding-left: 14% !important}
+iframe {width:435px; height:200px; margin:-0 !important}
+.title-result {left: 0%; width: 68%;} 
+.btn-1,.btn-2 {width: 30%; height: 25%; left: 35%; top: 140%;}
+.btn-2 {top: 180%;}
+}

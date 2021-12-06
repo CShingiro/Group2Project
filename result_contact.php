@@ -92,13 +92,13 @@ if (!$result)
 	$errors[]="Error Access DB";
 }
 
-if(count($errors)==0)
-{?>
-	Welcome to COS GYM <p>Our managers will contact you</p>
-<?php
+if(count($errors)==0) {
+
+	echo "<p>Welcome to COS GYM Our managers will contact you</p>";
+
 }else
 {
-    foreach($errors as $err)
+    foreach($errors as $err) 
 	{
 		echo $err;
 	}

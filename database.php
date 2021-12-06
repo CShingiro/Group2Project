@@ -5,10 +5,10 @@
 		return $string;
 	}
 
-	define('DB_USER', 'root');
-	define('DB_PASSWORD', '');
-	define('DB_HOST', 'localhost');
-	define('DB_NAME', 'COSGymPatronData');
+	define('DB_USER', get_env('CLOUDSQL_USER'));
+	define('DB_PASSWORD', get_env('CLOUDSQL_PASSWORD'));
+	define('DB_HOST', get_env('CLOUDSQL_DSN'));
+	define('DB_NAME', get_env('CLOUDSQL_DB'));
 
 	$dbc = @mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME)
 		OR die('Could not connect to MySQL: ' . mysqli_connect_error());

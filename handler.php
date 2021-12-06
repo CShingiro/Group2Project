@@ -10,6 +10,6 @@
         case '/result_contact.php':
             require 'result_contact.php';
         case '/checkout.php':
-            require 'checkout.php';        
+            require 'checkout.php';    
     }
 ?>

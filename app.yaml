@@ -5,25 +5,16 @@ env: flex
 runtime_config:
   document_root: .
 
+handlers:
+- url: /(.+\.(html|png|jpg|js|css))$
+  static_files: \1
+  upload: .+\.(html|png|jpg|js|css)$
+
+- url: /.*
+  script: auto
+
 entrypoint:
   serve handler.php
-
-handlers:
-- url: /images
-  static_dir: static/images
-  http_headers:
-    X-Foo-Header: foo
-    X-Bar-Header: bar value
-    vary: Accept-Encoding
-
-resources:
-  cpu: 2
-  memory_gb: 2.3
-  disk_size_gb: 10
-  volumes:
-  - name: ramdisk1
-    volume_type: tmpfs
-    size_gb: 0.5
 
 env_variables:
   CLOUDSQL_USER: root

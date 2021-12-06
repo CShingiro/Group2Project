@@ -7,15 +7,11 @@ a {color:black;}
 /*Header*/
 
 header {display: grid; grid-template-columns: 1fr 2fr;}
-   
-nav {font-size: 120%; margin-top: 8%;}
-
-nav a {text-decoration: none; padding:4%;}
 
 
-.logo img {width: 30%; 
+.logo img {width: 70%; 
     margin-top: 4%; 
-    margin-left: 23%; 
+    margin-left: 40%; 
     margin-bottom: 3%;}
 
 

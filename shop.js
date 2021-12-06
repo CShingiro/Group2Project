@@ -16,6 +16,7 @@ $(document).ready(function() {
 $(document).ready(function() {
     if (!localStorage.getItem("useImage")) return;
     let img = $('<img />', {
+      class: localStorage.getItem("useImage"),
       src: localStorage.getItem("useImage"),
     });
     img.appendTo($('#product'));

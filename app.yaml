@@ -3,7 +3,18 @@ runtime: php
 env: flex
 
 runtime_config:
-  document_root: website
+  document_root: .
+
+entrypoint:
+  serve handler.php
+
+handlers:
+- url: /images
+  static_dir: static/images
+  http_headers:
+    X-Foo-Header: foo
+    X-Bar-Header: bar value
+    vary: Accept-Encoding
 
 resources:
   cpu: 2
@@ -13,3 +24,9 @@ resources:
   - name: ramdisk1
     volume_type: tmpfs
     size_gb: 0.5
+
+env_variables:
+  CLOUDSQL_USER: root
+  CLOUDSQL_DB: COSGymPatronData
+  CLOUDSQL_PASSWORD: Ilneu070393@2
+  CLOUDSQL_DSN: /cloudsql/cosgym:us-central1:cosgympatrondata

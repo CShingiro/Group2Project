@@ -582,6 +582,13 @@ footer { background-color:#184e74;
   text-align: center;
 }
 
+#schedule {
+  text-align: center;
+}
+
+.welcome {
+  text-align: center;
+}
 
 @media screen and (max-width:1024px){
 

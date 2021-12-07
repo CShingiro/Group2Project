@@ -102,7 +102,7 @@ mysqli_stmt_bind_param(
 $result = mysqli_stmt_execute($stmt);
 if (!$result)
 {
-	$errors[]="Error Access DB";
+	$errors[]="<p>Error Access DB</p>";
 }
 
 if(count($errors)==0) {

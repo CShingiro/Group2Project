@@ -1,15 +1,15 @@
 
 <?php
-$link= mysqli_connect("localhost","root","","mydb");
-if ($link === false) 
+require "database.php";
+if ($dbc === false) 
 {
 	die ("ERROR: could not connect. " . mysqli_connect_error());
 }
 $name = $_POST['name'];
 $pass = $_POST['pass'];
 
-$sql= "SELECT * FROM user WHERE username='$name'AND password='$pass'";
-if($result=mysqli_query($link, $sql))
+$sql= "SELECT `COSGymPatronData`.`RegisteredLogin` WHERE username='$name'AND password='$pass'";
+if($result=mysqli_query($dbc, $sql))
 {
 	if($row=mysqli_fetch_array($result))
 	{
@@ -20,5 +20,5 @@ if($result=mysqli_query($link, $sql))
 		header('Location:wrongPas.html');
 	}
 }
-	mysqli_close($link);
+	mysqli_close($dbc);
 	?>

@@ -1,22 +1,18 @@
 <?php
-    $servername='localhost';
-    $username='root';
-    $password='';
-    $dbname = "mydb";
-    $conn=mysqli_connect($servername,$username,$password,"$dbname");
-      if(!$conn)
+    require "database.php";
+      if(!$dbc)
 	  {
           die('Could not Connect MySql Server:' .mysql_error());
         }
-		
+      
+     $name_id = rand(100,900);
      $name = $_POST['name'];
      $email = $_POST['email'];
      $pass = $_POST['pass'];
-     $con = $_POST['con'];
 	
-     $sql = "INSERT INTO user (username,email,password,ConPas)
-     VALUES ('$name','$email','$pass','$con')";
-     if (mysqli_query($conn, $sql))
+     $sql = "INSERT INTO `RegisteredLogin` FROM `COSGymPatronData` (UserID,name,email,password)
+     VALUES ('$name_id','$name','$email','$pass')";
+     if (mysqli_query($dbc, $sql))
 	 {
 		if ($_POST["pass"] === $_POST["con"]) 
 		{

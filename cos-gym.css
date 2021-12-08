@@ -8,15 +8,22 @@ a {color:black;}
 
 header {display: grid; grid-template-columns: 1fr 2fr;}
 
-.nav-link {
-  box-sizing: content-box;
-}
 
-
-.logo img {width: 70%; 
+.logo {width: 70%; 
     margin-top: 4%; 
     margin-left: 40%; 
     margin-bottom: 3%;}
+
+.parent_navigation {
+  font-size:120%; 
+  margin-left:30%; 
+  margin-top:8%;
+}
+
+.navigation {
+  text-decoration:none; 
+  padding: 4%;
+}
 
 
 /*Footer*/

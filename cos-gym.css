@@ -629,7 +629,7 @@ footer {width:100%; justify-content: flex-end;
 .form-contact textarea {width:63%;height:10vh;}
 .form-contact input {padding-right:55px;}
 .submit {padding-left: 14% !important}
-iframe {width:435px; height:200px; margin:-0 !important}
+#map {width:435px; height:200px; margin:-0 !important}
 .title-result {left: 0%; width: 68%;} 
 .btn-1,.btn-2 {width: 30%; height: 25%; left: 35%; top: 140%;}
 .btn-2 {top: 180%;}

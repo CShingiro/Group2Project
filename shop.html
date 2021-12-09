@@ -39,35 +39,35 @@
 <div><button class="btn-3">Check cart</button></div>
 <h1 class="title-shop">Sporting Goods</h1>
 <div class="shop-images">
-  <figure id="basketball_shoes">
-    <img class="shop_image" src="images/shop1.jpg" >
+  <figure>
+    <img id="basketball_shoes" class="shop_image" src="images/shop1.jpg" >
     <a href="seemore.html"><figcaption>See more</figcaption></a>
   </figure>
-  <figure id="tennis_set">
-    <img class="shop_image" src="images/shop2.jpg" >
+  <figure>
+    <img id="tennis_set" class="shop_image" src="images/shop2.jpg" >
     <a href="seemore.html"><figcaption id="tennis_set_no_shoes">See more</figcaption></a>
   </figure>
-  <figure id="running_kit">
-    <img class="shop_image" src="images/shop3.jpg" >
+  <figure>
+    <img id="running_kit" class="shop_image" src="images/shop3.jpg" >
     <a href="seemore.html"><figcaption>See more</figcaption></a>
   </figure>
-  <figure id="basketball_set">
-    <img class="shop_image" src="images/shop4.jpg" >
+  <figure>
+    <img id="basketball_set" class="shop_image" src="images/shop4.jpg" >
     <a href="seemore.html"><figcaption>See more</figcaption></a>
   </figure>
-  <figure id="running_shoes">
-    <img class="shop_image" src="images/shop5.jpg" >
+  <figure>
+    <img id="running_shoes"class="shop_image" src="images/shop5.jpg" >
     <a href="seemore.html"><figcaption>See more</figcaption></a>
   </figure>
-  <figure id="aerobics_kit">
-    <img class="shop_image" src="images/shop6.jpg" >
+  <figure>
+    <img id="aerobics_kit" class="shop_image" src="images/shop6.jpg" >
     <a href="seemore.html"><figcaption>See more</figcaption></a>
   </figure>
-  <figure id="">
+  <figure >
     <img class="shop_image" src="images/shop7.jpg" >
     <a href="seemore.html"><figcaption>See more</figcaption></a>
   </figure>
-  <figure id="">
+  <figure>
     <img class="shop_image" src="images/shop8.jpg" >
     <a href="seemore.html"><figcaption>See more</figcaption></a>
   </figure>
@@ -94,18 +94,7 @@
     </ul>
   </div>
    </footer>
-   <script>
-     $(document).ready(function() {
-    $("a").click(function(e) {
-      e.preventDefault();
-      let src = $(this).closest('figure').find('img').attr('src');
-      localStorage.setItem("useImage", src);
-      console.log('src', src);
-      // now that we got it stored, allow the link to go through
-      window.location.href=$(this).attr('href');
-    })
-  });
-   </script>
+   <script src="shop.js" type="text/javascript"></script>
 </body>
 </html>
 

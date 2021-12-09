@@ -633,12 +633,10 @@ footer {width:100%; justify-content: flex-end;
 .title-result {left: 0%; width: 68%;} 
 .btn-1,.btn-2 {width: 30%; height: 25%; left: 35%; top: 140%;}
 .btn-2 {top: 180%;}
-     @media screen and (max-width:1024px){
 .heading {font-size: 430%;}
 .leftSection  {
     width:80%; margin-left:40px;
     padding-top: 0;
     font-size:120%;}
-.rightSection {width:425px; ;
-        }
+.rightSection {width:425px; ;}
 }

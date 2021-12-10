@@ -9,7 +9,7 @@ a {color:black;}
 header {display: grid; grid-template-columns: 1fr 2fr;}
 
 
-.logo {width: 100%; 
+.logo {width: 180%; 
     margin-top: 4%; 
     margin-left: 40%; 
     margin-bottom: 3%;}
@@ -603,6 +603,15 @@ footer { background-color:#184e74;
 
 .online_grid {
   display: grid;
+}
+
+.storageImage {
+  width: 30%;
+  height: 60%;
+}
+
+#order_img {
+  padding-left: 10%;
 }
 
 @media screen and (max-width:1024px){

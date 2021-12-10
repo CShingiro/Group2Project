@@ -1,7 +1,8 @@
 "use strict";
 
-$(document).ready(function() {
-    $("a").click(function(e) {
+$(() => {
+    $("a").click(e => {
+      $src_backup = "images/shop1.png";
       e.preventDefault();
       let src = $(this).closest('figure').find('img').attr('src');
       localStorage.setItem("useImage", src);
@@ -13,12 +14,14 @@ $(document).ready(function() {
 
 //on next page
 
-$(document).ready(function() {
-    if (!localStorage.getItem("useImage")) return;
-    let img = $('<img />', {
-      class: localStorage.getItem("useImage"),
-      src: localStorage.getItem("useImage"),
-    });
-    img.appendTo($('#product'));
+$(() => {
+    if (!localStorage.getItem($src_backup)) return;
+    $("a").click(e => {
+      e.preventDefault();
+      let img = $('<img />', {
+        src: localStorage.getItem("useImage"),
+      });
+      img.addClass("storageImage").appendTo($('#product'));
+    })
   });
 

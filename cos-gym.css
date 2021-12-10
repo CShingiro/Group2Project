@@ -601,7 +601,7 @@ footer { background-color:#184e74;
   text-align: center;
 }
 
-#online_grid {
+.online_grid {
   display: grid;
 }
 
@@ -648,4 +648,7 @@ footer {width:100%; justify-content: flex-end;
     padding-top: 0;
     font-size:120%;}
 .rightSection {width:425px; ;}
+#form {width:fit-content, 50%; margin-left: 5%; margin-right: 20%;}
+.payment_title {padding-left: 15%;}
+#order {padding-right: 15%;}
 }

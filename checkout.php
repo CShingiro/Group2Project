@@ -37,7 +37,14 @@
   </header>
     <main>
         <div class="cart_container">
+          <?php
+            require('database.php');
+            $name = $_POST('first_name');
+            $email = $_POST('email');
+            $address = $_POST('address');
 
+            echo "<p class='online_message'>Thank you $name. Your order to $address will arrive shortly. An email confirmation has been sent to $address. Please allow 1 week for delivery.</p>";
+          ?>
         </div>
     </main>
         <footer>

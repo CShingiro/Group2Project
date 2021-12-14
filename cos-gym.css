@@ -289,9 +289,11 @@ footer { background-color:#184e74;
     width:400px;
     height:55px;
     padding-top:15px;
+    padding-right: 15px;
+    padding-bottom: 50px;
     color:white;
     text-align:center;
-    margin-left: 5%;
+    margin-left: 15%;
     background-color: #184e74;
     box-shadow: 1px 1px 3px black;}
 
@@ -614,6 +616,10 @@ footer { background-color:#184e74;
   padding-left: 10%;
 }
 
+#login_button {
+  padding-bottom: 5%;
+}
+
 @media screen and (max-width:1024px){
 
 .logo img {width: 50%; margin-top: 8%; margin-bottom: 5%;}
@@ -669,9 +675,11 @@ footer {width:100%; justify-content: flex-end;
     margin-top: -0px; 
     width: 90%; margin-left: 95%;}
 .formLog {margin-left: 45px;}
-.hding {width:330px;}   
+.hding {width:330px; margin-left: 0%;}   
 .textBox {margin-left:30px;}
 .btn2 { 
     margin-top: 10px; 
     width: 90%; margin-left: 120px;}
+#login_button {padding-bottom: 20%; margin-left:85%;margin-right: 25%;}
 }
+

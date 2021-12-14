@@ -660,4 +660,18 @@ footer {width:100%; justify-content: flex-end;
 #form {width:fit-content, 50%; margin-left: 5%; margin-right: 20%;}
 .payment_title {padding-left: 15%;}
 #order {padding-right: 15%;}
+.titleReg {padding-left:75%;}
+.formReg {margin-left:35px; height: 520px;}
+.rightSection2 {
+    float:none; margin-bottom: 475px; 
+    margin-left: 10px;}
+.btn3 {
+    margin-top: -0px; 
+    width: 90%; margin-left: 95%;}
+.formLog {margin-left: 45px;}
+.hding {width:330px;}   
+.textBox {margin-left:30px;}
+.btn2 { 
+    margin-top: 10px; 
+    width: 90%; margin-left: 120px;}
 }
